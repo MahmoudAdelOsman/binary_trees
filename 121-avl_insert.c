@@ -33,7 +33,8 @@ size_t momo_lenght(const binary_tree_t *tree)
 
 int momo_balance(const binary_tree_t *tree)
 {
-	return (tree != NULL ? momo_lenght(tree->left) - momo_lenght(tree->right) : 0);
+	return (tree != NULL ? momo_lenght(tree->left)
+			- momo_lenght(tree->right) : 0);
 }
 
 /**
